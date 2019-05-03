@@ -18,6 +18,8 @@ For interpolating results, first use predict.py --cloud=true --n=100 --ckpt=your
 
 
 ----------------------应为获得预测结果,但如何可视化？
+
+
 The actual interpolation is done in interpolation directory with the command:
 ./interpolate path/to/raw/data visu/semantic_test/full_scenes_predictions /path/to/where/to/put/results 'voxel_size'
 (with the voxel_size you want, in m. default is 0.1)
