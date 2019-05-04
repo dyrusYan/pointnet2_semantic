@@ -4,10 +4,12 @@ Get the preprocessed data (you can also preprocess the semantic data from raw da
 
 Compiling the C++ parts if you want to preprocess the data or to calculate results on the raw data can result in the following error : "/usr/bin/ld: cannot find -lvtkproj4", but you can overcome this difficulty by using this trick : ln -s /usr/lib/x86_64-linux-gnu/libvtkCommonCore-6.2.so /usr/lib/libvtkproj4.so (see https://github.com/PointCloudLibrary/pcl/issues/1594 for details).
 
-For downloading the raw data , go into dataset/ directory and use the command:
+
+下载原始数据 , go into dataset/ directory and use the command:
 ./downloadAndExtractSem8.sh
 
-For preprocessing with this raw data and the voxel_size you want, go into the preprocessing directory and use the command:
+
+处理原始数据并选择合适的voxel_size, go into the preprocessing directory and use the command:
 ./preprocess.sh ../dataset/raw_semantic_data ../dataset/semantic_data 'voxel_size'
 (with the voxel_size you want, in m. default is 0.05)
 
